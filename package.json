@@ -1,0 +1,15 @@
+{
+  "name": "w10diffpatch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "diff1": "diff -Naur node_modules/serializr/lib/serializr.js patches/serializr/lib/serializr.js > patches/serializr/lib/serializr.js.patch",
+    "patch1": "patch node_modules/serializr/lib/serializr.js patches/serializr/lib/serializr.js.patch",
+    "diff2": "diff -Naur node_modules/react-native/react.gradle patches/react-native/react.gradle > patches/react-native/react.gradle.patch",
+    "patch2": "patch node_modules/react-native/react.gradle patches/react-native/react.gradle.patch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "adamgogogo",
+  "license": "ISC"
+}

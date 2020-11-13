@@ -1,0 +1,11 @@
+--- node_modules/serializr/lib/serializr.js	2020-11-13 09:49:49.083698200 +0800
++++ patches/serializr/lib/serializr.js	2020-11-13 09:35:35.927999800 +0800
+@@ -645,7 +645,7 @@
+                         obj[key] = resultValue;
+                     }
+                 } else {
+-                    function setValue(resultValue) {
++                    var setValue = function (resultValue) {
+                         if (resultValue !== SKIP) {
+                             obj[key] = resultValue;
+                         }
